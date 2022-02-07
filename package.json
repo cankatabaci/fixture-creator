@@ -1,0 +1,24 @@
+{
+  "name": "fixture-creator",
+  "version": "0.0.1",
+  "description": "Round-robin tournament based sports fixture creator",
+  "main": "main.js",
+  "keywords": [
+    "fixture",
+    "sport fixture",
+    "football fixture",
+    "league schedule",
+    "fifa league fixture"
+  ],
+  "homepage": "https://github.com/cankatabaci/fixture-creator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cankatabaci/fixture-creator.git"
+  },
+  "author": "Cankat Abacı",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {}
+}
