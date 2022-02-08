@@ -2,8 +2,8 @@
   "name": "fixture-creator",
   "version": "0.0.1",
   "description": "Round-robin tournament based sports fixture creator",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],
