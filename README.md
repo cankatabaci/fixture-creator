@@ -20,26 +20,43 @@ console.log(fixtureCreator.createLeagueFixture(teams));
 `teams` must have at least 2 team<br />
 if `teams` length is odd, the team that will not play that week is shown to face `'BYE-THIS-WEEK'`.<br />
 
-`fixtureCreator.createLeagueFixture(teams)` returns game weeks array:<br />
+`fixtureCreator.createLeagueFixture(teams)` returns fixture object. fixture object contains game weeks array.<br />
 
 ```
-[
-   {
-      "title":"1. Match Week",
-      "matches":[
-         {
-            "home":"Galatasaray",
-            "away":"Barcelona"
-         },
-         {
-            "home":"Bayern Munich",
-            "away":"BYE-THIS-WEEK"
-         }
-      ]
-   }
-   ...
-   ...
-]
+{
+   "weeks":[
+      {
+         "title":"1. Match Week",
+         "matches":[
+            {
+               "home":"Galatasaray",
+               "away":"Barcelona"
+            },
+            {
+               "home":"Bayern Munich",
+               "away":"BYE-THIS-WEEK"
+            }
+         ]
+      },
+      {
+         "title":"2. Match Week",
+         "matches":[
+            {
+               "home":"Galatasaray",
+               "away":"BYE-THIS-WEEK"
+            },
+            {
+               "home":"Barcelona",
+               "away":"Bayern Munich"
+            }
+         ]
+      },
+      {
+          ...
+          ...
+      }
+   ]
+}
 ```
 
 ### Notes
