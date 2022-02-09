@@ -1,13 +1,14 @@
 language: node_js
 node_js:
-  - 14
+- 14
 before_deploy:
-  - npm i typescript
-  - npm run build
+- npm i typescript
+- npm run build
 deploy:
   provider: npm
   email: "$NPM_EMAIL_ADDRESS"
-  api_key: "$NPM_AUTH_TOKEN"
+  api_key:
+    secure: llR7SyfLPL1I5hXobff+ndNKamLfyF6h8vY3iafXsEkgdrkKhhwMSd6bWwYUGdEy3q7uYL/D3h3glLbzkKH5kRAKlVvQi4hQTfv8Ho047CiEE2PwMhTpA90SbbAPqafrClpPL8pMhpWi7HhDkPDjNFc/V0KMGET/eKwFNUiMkuWd15MZhHQlM7Sj0m/YzNnaYZnDpGV5+JbhW5JtxBvVFR/3l8P6XznIO4m+cl3Eiln6GyI6P9PGx0WEKrMdXdExIdftioHPpZ9OmONcq5bq9ZgU8xRl+7k2t+UNjTgZqTSdfX2ZqG8VlD0jMgmHNZOLn1Rgri+4F4UfyLnfFxdgIzo6lM4Mz85KWM0IsTO44Cs8VYjWOV/Vj+DJbhwHGjDN+bNhm0zVKaX2TGaq9rf9p9Sbpc3xySQsBhXfd+P0o5KJaSEFJDppXsFkkBaIRbH62kXpY04C8E6VDyD3knmnYfQU+BCZZdRcRbqikyg66UG7sQK8guurZYViShQ4fKS2wZ9lETwHGe+lelJffHuswaZF1HVUJ2JdD5BAQ4eZo44gA1V2xemhijXxHguIEuLa/Je+g7EC5fBqu7lRSKcFGfWwCqG3jkn/kTFXOfA1nomlR8wyVOPZxKMWOkNQb4s/vKHzXWBbb4PQb2u7YXL3oltN6EyBjZh9d4dZsB47KTk=
   skip_cleanup: true
   on:
     all_branches: true
