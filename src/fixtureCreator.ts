@@ -5,7 +5,7 @@ import { Team } from "./models/team";
 import { Week } from "./models/week";
 
 export class FixtureCreator{
-    public createLeagueFixture(teams:string[], ) : Fixture{
+    public createLeagueFixture(teams:string[]) : Fixture{
         let validTeams = this.checkTeams(teams);
 
         let teamsArray = this.createTwoDimensionalArray(validTeams);
