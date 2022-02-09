@@ -1,16 +1,3 @@
 language: node_js
 node_js:
 - 14
-before_deploy:
-- npm i typescript
-- npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
-- npm run build
-deploy:
-  provider: npm
-  email: cankatabaci95@gmail.com
-  api_key:
-    secure: H5QO3rwKpegHRHc1yOUOlrOR8HcrUrnOrOY4uXz4kKLi7Q80LpzpMVWefSdtaI6KIer8DWSamRCGhhiTBwbkFkiyiIJ89CGWS+JEQeaiR9wf8xOjMauFp4P7PKiPDhNqK9vq7psdo0Mq/PV8c+j3YbjrRPwguZemMaRpforKZW5fHrirQ38Xvsvb8StxGMqHHQrHTlP6AGU1eWRkBMMO31/3DnT34gzjUboJpD0Nzserok2LUxQXQ+5WLaFxktPn1oWu8EsTcg4oOHDsJMIylvpG6Y/zt/EltUbuXxlscxfvZDt0HRWeUT6/AnRwt6xejbRfpum+rQ7Vh1WQVIEz11IdqcFifY4AltiGt3Av/CwzWA8nA/j3hyGSh+c672WXHwiAwfVhttZhGwkA351pvF3noV4Q+vbCzVs7We4MVsETDfPLUEh5gCh9Lhi1L6EXb98twgC4vMatIvmBlj2Jpf7sxVBDtewXrwNHfa+L+tXoNlxXYcMXQs7469N0glPsHDQBSTOcSX+e8ZGsSQ4iE/GzGZ4pzBUGt2L+nTBnVA/dYpUMCXu+vIA4NjjnmE3FuoIN0RQEKiQ4XCbFLUaM9boD1/Ma41FNxsMFYVtBLOnXB+5g2eH8ivQV0efwPo/XmyTGrVuUY2C3YiAHZibPd+M1N2FNOlr3BwbuMGIxlWw=
-  on:
-    repo: cankatabaci/fixture-creator
-    branch: main
-  skip_cleanup: 'true'
