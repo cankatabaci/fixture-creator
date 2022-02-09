@@ -6,4 +6,6 @@ deploy:
   email: "$NPM_EMAIL_ADDRESS"
   api_key: "$NPM_AUTH_TOKEN"
   on:
-    branches: main
+    branches:
+      only:
+        - main
