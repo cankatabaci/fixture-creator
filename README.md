@@ -4,9 +4,9 @@
 
 
 
-> I developed this package to use in
-> FIFA tournaments that we play with our friends.
-> We play our FIFA tournament like a classic league
-> so it creates(by default) a fixture that includes the return matches.
+> I developed this package to use in<br />
+> FIFA tournaments that we play with our friends.<br />
+> We play our FIFA tournament like a classic league<br />
+> so it creates(by default) a fixture that includes the return matches.<br />
 
  
