@@ -2,8 +2,7 @@ language: node_js
 node_js:
   - 14
 before_deploy:
-  - npm install
-  - npx tsc
+  - npm i typescript
   - npm run build
 deploy:
   provider: npm
