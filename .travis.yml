@@ -3,6 +3,7 @@ node_js:
 - 14
 before_deploy:
 - npm i typescript
+- npm set //registry.npmjs.org/:_authToken $NPM_TOKEN
 - npm run build
 deploy:
   provider: npm
