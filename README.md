@@ -1,6 +1,7 @@
 # Fixture Creator
+[![Build Status](https://app.travis-ci.com/cankatabaci/fixture-creator.svg?branch=main)](https://app.travis-ci.com/cankatabaci/fixture-creator)
 
- _Round-robin tournament based sports fixture creator_
+_Round-robin tournament based sports fixture creator_<br />
 
 ## **Install**
 ```
