@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - 14
 before_deploy:
+  - npm install
+  - npx tsc
   - npm run build
 deploy:
   provider: npm
