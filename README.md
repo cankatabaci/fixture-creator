@@ -1,5 +1,5 @@
 # Fixture Creator
-[![Build Status](https://app.travis-ci.com/cankatabaci/fixture-creator.svg?branch=main)](https://app.travis-ci.com/cankatabaci/fixture-creator)
+[![Node.js CI](https://github.com/cankatabaci/fixture-creator/actions/workflows/node.js.yml/badge.svg)](https://github.com/cankatabaci/fixture-creator/actions/workflows/node.js.yml)
 [![Publish Package to npmjs](https://github.com/cankatabaci/fixture-creator/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/cankatabaci/fixture-creator/actions/workflows/npm-publish.yml)
 
 _Round-robin tournament based sports fixture creator_<br />
