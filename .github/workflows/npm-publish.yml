@@ -8,12 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          node-version: 'v14.18.1'
-          registry-url: 'https://registry.npmjs.org'
-          scope: '@cankatabaci'
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v2
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
