@@ -20,8 +20,10 @@ console.log(fixtureCreator.createLeagueFixture(teams));
 
 `teams` should be a array of team names as a string<br />
 `teams` must have at least 2 team<br />
-if `teams` length is odd, the team that will not play that week is shown to face `'BYE-THIS-WEEK'`.<br />
-
+if `teams` length is odd, the team that will not play that week is shown to face `'BYE-THIS-WEEK'`. If you prefer dash(`-`) instead of this text, you have to write false after team string<br />
+```ts
+console.log(fixtureCreator.createLeagueFixture(teams, false));
+```
 `fixtureCreator.createLeagueFixture(teams)` returns fixture object. fixture object contains game weeks array.<br />
 
 ```
