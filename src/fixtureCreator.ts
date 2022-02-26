@@ -5,8 +5,8 @@ import { Team } from "./models/team";
 import { Week } from "./models/week";
 
 export class FixtureCreator{
-    public createLeagueFixture(teams:string[]) : Fixture{
-        let validTeams = this.checkTeams(teams);
+    public createLeagueFixture(teams:string[], byeTeamTextIsEnable:boolean = true) : Fixture{
+        let validTeams = this.checkTeams(teams, byeTeamTextIsEnable);
 
         let teamsArray = this.createTwoDimensionalArray(validTeams);
 
@@ -106,10 +106,14 @@ export class FixtureCreator{
         return gameWeeks;
     }
 
-    private checkTeams(teams:string[]){
+    private checkTeams(teams:string[], byeTeamTextIsEnable:boolean){
         let shuffledTeams = this.shuffleTeams(teams);
         if(this.isOdd(shuffledTeams.length)){
-            shuffledTeams.push(Constant.BYE_TEAM);
+            if(byeTeamTextIsEnable){
+                shuffledTeams.push(Constant.BYE_TEAM);
+            }else{
+                shuffledTeams.push(Constant.DASH);
+            }   
         }
         return shuffledTeams;
     }
